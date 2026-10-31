@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VPN آمن</string>
+    <string name="welcome_message">مرحباً بك في VPN آمن</string>
+    <string name="connect_button">اتصال</string>
+    <string name="disconnect_button">قطع الاتصال</string>
+    <string name="server_selection">اختر خادماً</string>
+    <string name="kill_switch">مفتاح القتل</string>
+    <string name="connected">متصل</string>
+    <string name="disconnected">غير متصل</string>
+</resources>

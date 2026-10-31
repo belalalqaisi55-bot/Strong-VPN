@@ -1,0 +1,6 @@
+{
+  "name": "Secure VPN",
+  "description": "تطبيق VPN احترافي متكامل يوفر حماية الخصوصية، اختيار الخوادم العالمية، إضافة خوادم خاصة، فحص تسريب IP/DNS، وعداد بيانات وسرعة مباشر.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

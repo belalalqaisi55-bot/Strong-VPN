@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Secure VPN</string>
+    <string name="welcome_message">Welcome to Secure VPN</string>
+    <string name="connect_button">Connect</string>
+    <string name="disconnect_button">Disconnect</string>
+    <string name="server_selection">Select Server</string>
+    <string name="kill_switch">Kill Switch</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+</resources>
