@@ -11,6 +11,21 @@ class SecureVpnService : VpnService() {
     private var vpnInterface: ParcelFileDescriptor? = null
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        val channelId = "vpn_service_channel"
+        val channel = android.app.NotificationChannel(
+            channelId,
+            "VPN Service",
+            android.app.NotificationManager.IMPORTANCE_LOW
+        )
+        val manager = getSystemService(android.app.NotificationManager::class.java)
+        manager.createNotificationChannel(channel)
+
+        val notification = android.app.Notification.Builder(this, channelId)
+            .setContentTitle("VPN is active")
+            .setSmallIcon(android.R.drawable.ic_lock_lock)
+            .build()
+        startForeground(1, notification)
+
         try {
             val server = intent?.getStringExtra("SERVER") ?: "Unknown"
             val builder = Builder()
